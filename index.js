@@ -11,7 +11,7 @@
 var express = require('express');
 const app = express();
 const puerto = process.env.PORT || 5000 ;
-
+const utf8 = require('utf8');
 
 
 /* FORMULARIO para INGRESO de IP
@@ -50,7 +50,12 @@ app.get('/tu-ip', function (req, res) {
   var tuPaisEnJSON = JSON.stringify(tuPais);
   console.log(tuPaisEnJSON); 
 
-  res.send(`JSON: <br> ${tuPaisEnJSON}`);
+  console.log("----------------------------------- ENCODE UTF-8");
+  var tuPaisEnJSON_UTF8 = utf8.encode( tuPaisEnJSON );
+  console.log( tuPaisEnJSON_UTF8 );
+
+  res.send(` ${tuPaisEnJSON_UTF8}`);
+  //res.send(` ${tuPaisEnJSON}`);
   //res.send(`Tu IP es de: ${tuPais.country_short} <br/> Tu IP es de: ${tuPais.country_long} `);
 
 });
