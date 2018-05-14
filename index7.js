@@ -3,13 +3,14 @@
  *          - La FUNCION para CONVERTIR IP en PAIS ahora está en MODULO.*
  *          - Devuelvo el objeto en formato JSON completo.*
  *          - Cambio la BASE de DATOS por la IPv4 (antes usaba la IPv6)
+ *          - Adaptado para HEROKU
  * /
 
 /* Express
 -----------------------------------------*/
 var express = require('express');
 const app = express();
-
+const puerto = process.env.PORT || 5000 ;
 
 
 
@@ -56,4 +57,4 @@ app.get('/tu-ip', function (req, res) {
 
 
 
-app.listen(3000);
+app.listen(puerto);
