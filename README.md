@@ -36,3 +36,18 @@
     ----> Mas info: https://devcenter.heroku.com/articles/getting-started-with-nodejs#define-a-procfile
     - En el archivo '.env' se declaran las VARIABLES DEL ENTORNO (se pueden configurar algunas cosas de HEROKU desde ahi).
     ----> Mas info: https://devcenter.heroku.com/articles/getting-started-with-nodejs#define-config-vars
+
+### Info util
+- Para loggearse
+> heroku login
+
+- Para subir a HEROKU:
+> git push heroku master
+
+- Para ver de manera local
+> heroku local web
+
+- Para ver en el navegaro (online)
+> heroku open
+
+
