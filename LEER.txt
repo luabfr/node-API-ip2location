@@ -1,0 +1,19 @@
+
+
+index2.js
+- IMPRIMO en HTML una VAR cuyo valor es un RETURN de una FUNCION que se encarga de DEVOLVER el PAIS, recibiendo como parametro, una IP.
+
+index3.js
+- Recibo el OBJETO 'PAIS', y el req.send() le indico que PROPIEDAD quiero ver. 
+- A diferencia de 'index2.js', aquí la funcion devuelve el OBJETO completo.
+
+index4.js
+- Convierto el OBJETO 'pais' a un JSON para poder IMPRIMIRLO completo en HTML.
+- De no hacerlo, al imprimir en el HTML sale '[Object]=[object]'.
+
+index5.js
+- Encapsulo la funcion ip2location en un MODULO.
+
+index6.js
+- Utilizo MODULO.
+- Obtengo JSON. (simil index4.js)

@@ -1,0 +1,2 @@
+1 - recibir una IP (mediante un campo de formulario)
+2 - imprimir la LOCACION/CIUDAD de la IP(¿o redireccionar?)
